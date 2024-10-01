@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topper Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #243B55;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        header a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin-left: auto;
+        }
+
+        header form {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        header input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        header button {
+            background-color: #243B55;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        header button:hover {
+            background-color: #141E30;
+        }
+
+        #topper-videos {
+            padding: 20px;
+        }
+
+        .topper-video {
+            background-color: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .topper-video h2 {
+            color: #243B55;
+            margin-bottom: 10px;
+        }
+
+        .topper-video p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #243B55;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #243B55;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #141E30;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #243B55;
+            color: white;
+            margin-top: 20px;
+        }
+
+        #help-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #help-section h3 {
+            color: #243B55;
+            margin-bottom: 10px;
+        }
+
+        #help-section p {
+            color: #555;
+        }
+
+        #help-section a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #help-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="/images/IMG_8282.PNG" alt="Logo">
+        <div>
+            <h1>Topper Videos</h1>
+            <p>Learn from the best students and discover their study tips, strategies, and more!</p>
+        </div>
+        <form action="/search" method="get">
+            <input type="text" name="query" placeholder="Search videos...">
+            <button type="submit">Search</button>
+        </form>
+        <a href="/index.html">Home</a>
+    </header>
+
+    <section id="topper-videos">
+        <article class="topper-video">
+            <h2>Harry - Concept of OOPs</h2>
+            <p><strong>Course/Program:</strong> Computer Science</p>
+            <p><strong>Achievements:</strong> National coding competition winner, Top scorer in final exams</p>
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/5OrZpBbGKgc?si=3ASsiIMp9iKfv-mh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><strong>Description:</strong> In this video, Harry shares his concept for OOPs.</p>
+            <p><a href="/toppervid.html">Video Notes</a></p>
+            <div>
+                <h3>Leave Your Feedback or Comments</h3>
+                <form action="/submit-feedback" method="post">
+                    <label for="comment">Your Comment:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </article>
+
+        <article class="topper-video">
+            <h2>Shardha - HTML Basics to Advance</h2>
+            <p><strong>Course/Program:</strong> Web Development</p>
+            <p><strong>Achievements:</strong> Dean's List, Gold medalist in Data Science</p>
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=BtHAxsL-44MQ3M0J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><strong>Description:</strong> Shardha explains HTML from basic to advance level.</p>
+            <p><a href="/toppervid.html">Video Notes</a></p>
+            <div>
+                <h3>Leave Your Feedback or Comments</h3>
+                <form action="/submit-feedback" method="post">
+                    <label for="comment">Your Comment:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </article>
+
+        <article class="topper-video">
+            <h2>Kunal - Binary Search Algorithm</h2>
+            <p><strong>Course/Program:</strong> Web Development</p>
+            <p><strong>Achievements:</strong> Gold medalist in App development</p>
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/f6UU7V3szVw?si=WPxtEMvw-G1mycqb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><strong>Description:</strong> Learn Binary Search Algorithm with me.</p>
+            <p><a href="/toppervid.html">Video Notes</a></p>
+            <div>
+                <h3>Leave Your Feedback or Comments</h3>
+                <form action="/submit-feedback" method="post">
+                    <label for="comment">Your Comment:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <div id="help-section">
+            <h3>Need Help?</h3>
+            <p>If you have any questions or need assistance, visit our <a href="/help.html">Help Page</a> or contact our support team.</p>
+        </div>
+        <p>More videos coming soon!</p>
+    </footer>
+
+</body>
+</html>

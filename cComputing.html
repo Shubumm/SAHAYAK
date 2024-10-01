@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Guide</title>
+    <link rel="stylesheet" href="databot.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #243B55;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        a {
+            color: #243B55;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container a {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<header><a href="/resourcepage.html">Learning Zone</a></header>
+<body>
+    <div class="container">
+        <h1>What is Cloud Computing</h1>
+        <p>Cloud computing is like having a big computer that you can use from anywhere in the world as long as you have an internet connection. You can save your pictures, videos, and documents on this big computer and access them from your phone, tablet, or computer. It's like having a magic box that holds all your important stuff!</p>
+        
+        <p>Here are links to more detailed definitions of cloud computing for those who want to learn more:</p>
+        <a href="https://www.ibm.com/topics/cloud-computing">What is Cloud Computing</a>
+
+        <h1>Step 1: Learn the Basics</h1>
+        <p>Before diving into cloud computing, it’s important to have a strong foundation in computer science fundamentals. Here are some resources to help you get started:</p>
+        <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0">Course</a>
+        <a href="https://blog.boot.dev/computer-science/computer-science-for-beginners/">Article</a>
+
+        <h1>Step 2: Learn Cloud Computing</h1>
+        <p>Once you have a good understanding of computer science fundamentals, you can move on to learning about cloud computing. These are some resources:</p>
+        <a href="https://www.coursera.org/learn/introduction-to-cloud">Course</a>
+        <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900">Exam Guide</a>
+
+        <h1>Step 3: Develop Skills in Cloud Computing</h1>
+        <p>To become job-ready in Cloud Computing, it’s important to develop specific skills in areas such as Cloud Security, DevOps, and Big Data. Here are some resources that can help you develop these skills:</p>
+        <a href="https://www.simplilearn.com/learn-cloud-security-basics-skillup">Course</a>
+        <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/?practice-assessment-type=certification">Exam Guide</a>
+
+        <h1>Step 4: Practice, Practice, Practice</h1>
+        <p>Learning about cloud computing is just the first step. It's important to practice what you've learned and gain practical experience. Here are some resources to help you practice:</p>
+        <a href="https://aws.amazon.com/free/?trk=99f831a2-d162-429a-9a77-a89f6b3bd6cd&sc_channel=ps&s_kwcid=AL!4422!3!645125273267!e!!g!!aws%20free%20tier&ef_id=Cj0KCQiAutyfBhCMARIsAMgcRJTdpKcx7Rl3BQhl_n6A1n2hNc3-pxcRrUJ4bzY0-tipCRSsBmkEpNgaApNdEALw_wcB:G:s&s_kwcid=AL!4422!3!645125273267!e!!g!!aws%20free%20tier&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS Free Tier</a>
+        <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account?icid=azurefreeaccount">Azure Free Account</a>
+
+        <h1>Step 5: Join Cloud Computing Communities</h1>
+        <p>It’s important to network, and one way to do that is by joining communities related to your field. These communities can help you stay up-to-date with the latest trends and best practices in Cloud Computing. You can check Twitter, LinkedIn, and other platforms. Here are some popular communities to join:</p>
+        <a href="https://www.reddit.com/r/Cloud/">Cloud Computing Subreddit</a>
+        <a href="https://aws.amazon.com/events/asean/community-and-events/">AWS Community</a>
+    </div>
+    <div id="chat-icon" class="chat-icon">
+        <img id="icon-image" src="chatbox.png" alt="Message Icon">
+    </div>
+
+    <!-- Chat Container -->
+    <div id="chat-container" class="chat-container hidden">
+        <div class="chat-header">
+            <h2>cloud computing Q&A Bot</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input-container">
+            <select id="question-select">
+                <option value="" disabled selected>Select a question...</option>
+                <option value="What is cloud computing?">What is cloud computing?</option>
+                <option value="Name the three main types of cloud service models.">
+                    Name the three main types of cloud service models.</option>
+                <option value="What are the benefits of using cloud computing?">
+                    What are the benefits of using cloud computing?</option>
+                <option value="Give an example of a popular SaaS application."
+                >Give an example of a popular SaaS application.</option>
+                <option value="What is cloud storage?">What is cloud storage?</option>
+                <option value="What does 'scalability' mean in cloud computing?">
+                    What does 'scalability' mean in cloud computing?</option>
+                <option value="What is the difference between IaaS, PaaS, and SaaS?">What is the difference between IaaS, PaaS, and SaaS?</option>
+
+
+            </select>
+            <button id="send-btn">Ask</button>
+        </div>
+    </div>
+    <script src="cloud.js"></script> 
+</body>
+</html>

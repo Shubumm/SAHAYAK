@@ -1,0 +1,142 @@
+.chat-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    z-index: 101;
+}
+
+.chat-icon img {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #721ae4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    position: fixed;
+    bottom: 140px; /* Position above the icon */
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hidden {
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.chat-header {
+    background-image: url(aibox.webp);
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.chat-box {
+    padding: 15px;
+    height: 215px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.chat-message.user {
+    text-align: right;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.chat-message.bot {
+    text-align: left;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+#question-select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#send-btn {
+    padding: 12px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+#send-btn:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.cointainer{
+    height: 81vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cointainer div{
+    padding: 20px;
+    margin: auto;
+    background-color: aliceblue;
+    box-shadow: 0px 4px 8px rgba(0,0,0,1);
+}
+.cointainer h4{
+    font-size: 2rem;
+    margin: auto;
+    margin-bottom: 5px;
+}
+img{
+    height:25vh;
+    width: 25vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chat-box{
+    background-image: url(floral.jpg);
+    background-size: cover;
+}

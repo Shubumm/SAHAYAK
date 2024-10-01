@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="web.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #243B55;
+            margin-top: 20px;
+        }
+        p {
+            margin: 15px 0;
+        }
+        a {
+            color: #243B55;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .container a {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<header><a href="/resourcepage.html">Learning Zone</a></header>
+<body>
+    <div class="container">
+        <h1>What is Web Development</h1>
+        <p>Web development refers to the process of building, creating, and maintaining websites and web applications that run on the internet. It involves a combination of programming languages, tools, and techniques to design, develop, test, and deploy a website or web application.</p>
+
+        <p>Here are links to more detailed definitions of Web Development for those who want to learn more:</p>
+        <a href="https://www.geeksforgeeks.org/web-development/">Web-development</a>
+        <h1>Step 1: Learn the Basics</h1>
+        <p>Before diving into Web-development, it’s important to have a strong foundation in computer science fundamentals. Here are some resources to help you get started:</p>
+        <a href="https://www.coursera.org/courses?query=web%20development">Course</a>
+        <a href="https://www.smashingmagazine.com/2017/04/applications-machine-learning-designers/">Article</a>
+
+        <h1>Step 2: Learn Web-development:</h1>
+        <p>Once you have a good understanding of computer science fundamentals, you can move on to learning about Web-development. These are some resources:</p>
+        <a href="https://www.coursera.org/courses?query=web%20development">Course</a>
+        <a href="">Exam Guide</a>
+
+        <h1>Step 3: Develop Skills in Web-Development:</h1>
+        <p>To become job-ready in Cloud Computing, it’s important to develop specific skills in areas such as DevOps, and Big Data. Here are some resources that can help you develop these skills:</p>
+        <a href="https://www.simplilearn.com/learn-cloud-security-basics-skillup">Course</a>
+        <a href="https://w3cx.org/">Exam Guide</a>
+
+        <h1>Step 4: Practice, Practice, Practice</h1>
+        <p>Learning about web development is just the first step. It's important to practice what you've learned and gain practical experience. Here are some resources to help you practice:</p>
+        <a href="https://codepen.io/challenges?ref=blog.codewell.cc">Codepen</a>
+        <a href="https://www.freecodecamp.org/?ref=blog.codewell.cc">freecodecamp</a>
+
+        <h1>Step 5: Join Web-Development Communities</h1>
+        <p>It’s important to network, and one way to do that is by joining communities related to your field. These communities can help you stay up-to-date with the latest trends and best practices in Web-Development. You can check Twitter, LinkedIn, and other platforms. Here are some popular communities to join:</p>
+        <a href="https://www.mergewebdev.com/?utm_source=blog&utm_medium=toplist&utm_campaign=Nat&utm_content=2">Merge</a>
+        <a href="https://stackoverflow.com/">Stackoverflow</a>
+    </div>
+    <div id="chat-icon" class="chat-icon">
+        <img id="icon-image" src="chatbox.png" alt="Message Icon">
+    </div>
+
+    <!-- Chat Container -->
+    <div id="chat-container" class="chat-container hidden">
+        <div class="chat-header">
+            <h2>web-development Q&A Bot</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input-container">
+            <select id="question-select">
+                <option value="" disabled selected>Select a question...</option>
+                <option value="What is HTML, and why is it important in web development?">What is HTML, and why is it important in web development?</option>
+                <option value="Explain the difference between HTML, CSS, and JavaScript. How do they interact on a webpage?">
+                    Explain the difference between HTML, CSS, and JavaScript. How do they interact on a webpage?</option>
+                <option value="What are the key differences between a static website and a dynamic website?">
+                    What are the key differences between a static website and a dynamic website?</option>
+                <option value="How does the concept of responsive design work, and why is it essential for modern websites?"
+                >"How does the concept of responsive design work, and why is it essential for modern websites?"</option>
+                <option value="What is the purpose of the <div> tag in HTML, and how is it commonly used?">What is the purpose of the div tag in HTML, and how is it commonly used?</option>
+                <option value="What are classes and IDs in CSS, and how do you select elements using them?">
+                    What are classes and IDs in CSS, and how do you select elements using them?</option>
+                <option value="Explain the role of the DOM (Document Object Model) in web development.">Explain the role of the DOM (Document Object Model) in web development.</option>
+
+
+            </select>
+            <button id="send-btn">Ask</button>
+        </div>
+    </div>
+
+    <script src="web.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

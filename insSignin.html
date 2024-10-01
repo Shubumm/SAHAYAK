@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login label {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .login input[type="email"],
+        .login select,
+        .login input[type="text"],
+        .login input[type="password"] {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .login input[type="submit"] {
+            padding: 12px;
+            background-color: #243B55;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .login input[type="submit"]:hover {
+            background-color: #141E30;
+        }
+
+        .login p {
+            text-align: center;
+            color: #666;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer a {
+            color: #243B55;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form action="/">
+            <label for="chk" aria-hidden="true">Login</label>
+            <input type="email" name="email" id="email" placeholder="College Email" required>
+            <select name="college" required>
+                <option value="" disabled selected>Select your college</option>
+                <option value="ABC">ABC</option>
+                <option value="XGY">XGY</option>
+                <option value="PPQ">PPQ</option>
+                <option value="CGY">CGY</option>
+                <option value="SUP">SUP</option>
+                <option value="XGH">XGH</option>
+                <option value="YYR">YYR</option>
+                <option value="FGH">FGH</option>
+            </select>
+            <input type="text" name="code" id="cd" placeholder="College Code" readonly>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        </form>
+    </div>
+    <footer>
+        <a href="/insSignup.html">Connect Your College with Sahayak</a>
+    </footer>
+</body>
+</html>
+

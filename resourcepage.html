@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleresource.css">
+    <title>Flashcards</title>        
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="/images/logobg.png">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/toppervid.html">Insight Share</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+            <div class="card-face card-front">
+                <img src="https://shorturl.at/JG7B0" alt="image" width="100px" height="100px" class="card-image">
+                <button>data analysis</button>
+            </div>
+            <div class="card-face card-back">
+                <a href="/dataanalyst.html">
+                    click here to know more</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+            <div class="card-face card-front">
+                <img src="https://shorturl.at/GKs6o" alt="image" width="100px" height="100px" class="card-image">
+                <button>web
+                    development</button>
+            </div>
+            <div class="card-face card-back">
+                <a href="/web.html">
+                    click here to know more</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+            <div class="card-face card-front">
+                <img src="https://shorturl.at/vDi9e" alt="image" width="100px" height="100px" class="card-image">
+                <button>cloud computing</button>
+            </div>
+            <div class="card-face card-back">
+                <a href="/cComputing.html">
+                    click here to know more</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
+    <div id="chat-icon" class="chat-icon">
+        <img id="icon-image" src="chatbox.png" alt="Message Icon">
+    </div>
+    <!-- Chat Container -->
+    <div id="chat-container" class="chat-container hidden">
+        <div class="chat-header">
+            <h2>Roadmaps Q&A Bot</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input-container">
+            <select id="question-select">
+                <option value="" disabled selected>Select a question...</option>
+                <option value="How can I use the Quiz Bot?">How can I use the Quiz Bot?</option>
+                <option value="What is the Roadmaps Corner?">What is the Roadmaps Corner?</option>
+                <option value="What can the Chat Bot help me with?">What can the Chat Bot help me with?</option>
+                <option value="What are different roadmaps available ?">What are different roadmaps available ?</option>
+                <option value="How do I choose the right roadmap for me?">How do I choose the right roadmap for me?</option>
+                <option value="Can I switch between roadmaps?">Can I switch between roadmaps?</option>
+                <option value="Are the roadmaps updated regularly?">Are the roadmaps updated regularly?</option>
+                <option value="Do roadmaps include practical projects or assignments?">Do roadmaps include practical projects or assignments?</option>
+                <option value="How can I track my progress on a roadmap?">How can I track my progress on a roadmap?</option>
+                <option value= "Are there any prerequisites for starting a roadmap?">Are there any prerequisites for starting a roadmap?</option>
+                <option value="How do I search for specific videos or resources?">How do I search for specific videos or resources?</option>
+                <option value="Can I download videos or notes?">Can I download videos or notes?</option>
+                <option value="How can I access content on Sahayak?">How can I access content on Sahayak?</option>
+                <option value="How do I leave comments or feedback on videos?">How do I leave comments or feedback on videos?</option>
+                <option value="What is Sahayak?">What is Sahayak?</option>
+                <option value="Do we get any reward for uploading videos ?">Do we get any reward for uploading videos ?</option>
+                <option value="Do there is any Crieteria for uploading video in Toppers video Section ?">Do there is any Crieteria for uploading video in Toppers video Section ?</option>
+
+            </select>
+            <button id="send-btn">Ask</button>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>

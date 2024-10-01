@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahayaklearninghub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/images/logobg.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/resourcepage.html">LEARNING ZONE</a></li>
+                    <li><a href="/Alumni.html">ALUMNI CORNER</a></li>
+                    <li><a href="/toppervid.html">INSIGHT SHARE</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                    <li><a href="/Login.html">Login/SignUp</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>SAHAYAK: A Learning Space</h1>
+            <p>Sahayak is a place which has helped many people achieve their Dreams<br>And will Continue to do so in the Future</p>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
+        </div>
+
+    </section>
+ <!-------course------->
+ <section class="course">
+    <h1>Key Features We Offer</h1>
+    <p>Smart Education: A Big Leap Towards Future</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Alumni Talk Corner</h3>
+            <p>The Alumni Talk Corner is a dedicated space where former students share their experiences, insights,  
+                and advice with the current community. It’s a platform that bridges the gap between past and present,  
+                offering valuable perspectives on life after graduation, career paths, and personal growth.</p>
+        </div>
+        <div class="course-col">
+            <h3>AI Chat Bot</h3>
+            <p>Our AI Chatbot is your instant, 24/7 digital assistant, designed to provide quick 
+                 and accurate responses to your queries. Whether you need help navigating the website,  
+                have questions about services, or seek information on specific topics, the AI Chatbot is here to assist.</p>
+        </div>
+        <div class="course-col">
+            <h3>Quiz Bot</h3>
+            <p>The Quiz Bot is your interactive companion for testing knowledge and having fun. Designed  
+                to engage users with a wide range of topics, from general knowledge to specialized 
+                 subjects, the Quiz Bot delivers an exciting learning experience through dynamic quizzes.</p>
+        </div>
+    </div>
+
+
+ </section>
+ <!------facilities------>
+ <section class="facilities">
+    <h1>Our Other Facilities</h1>
+    <p>We Offer the best Facilities</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="/images/tuw66lyn.png" >
+            <h3>Resource Library</h3>
+            <p>The Resource Library is a comprehensive digital hub offering a 
+                vast collection of educational materials, tools, and references.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="/images/mek28h05.png" >
+            <h3>Roadmap Corner</h3>
+            <p>The Roadmap Corner is your strategic guide to achieving personal and professional goals. </p>
+        </div>
+        <div class="facilities-col">
+            <img src="/images/nu.png" >
+            <h3>Topper Video Section</h3>
+            <p>Discover inspiring stories from our top achievers in the Topper Video Section! </p>
+        </div>
+        
+    </div>
+
+ </section>
+ <!-- --testimonial-- -->
+  <section class="testimonials">
+    <h1>What Our Student Says</h1>
+    <p></p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="/images/user1.jpg">
+            <div>
+                <p>"This website offers an incredible range of resources. 
+                    From interactive quizzes to in-depth video lectures, 
+                    it covers every topic I need to master my course material." </p>
+                <h3>Christine Berlin </h3>    
+            </div>
+
+        </div>
+        <div class="testimonial-col">
+            <img src="/images/user2.jpg">
+            <div>
+                <p>"I appreciate how the website tailors the learning experience to my needs. 
+                    The adaptive learning paths mean I can focus on areas where I need more practice." </p>
+                <h3>David Byer</h3>    
+            </div>
+
+        </div>
+    </div>
+
+  </section>
+  <!-- -footer- -->
+   <section class="footer">
+    <h4>About Us</h4>
+    <p>We are committed to providing an inclusive and supportive learning environment. 
+        Our platform is designed to be user-friendly and accessible,<br> 
+        ensuring that every student can thrive regardless of their background or learning preferences.</p>
+     <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+     </div>   
+    
+
+
+   </section>
+
+<!-- ------JavaScript-----     -->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>    
+    
+</body>
+</html>
